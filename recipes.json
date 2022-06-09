@@ -1,0 +1,447 @@
+[
+    {
+        "title": "Rolls, Soft",
+        "notes": "A soft, moist roll I prefer for sandwiches and hamburgers.",
+        "ingredients": [
+            {
+                "name": "flour",
+                "percent": 1,
+                "note": "Use &quot;strong&quot; flour if you can find it.",
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.035,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.02,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "sugar",
+                "percent": 0.095,
+                "nutrition": "Sugars, granulated"
+            },
+            {
+                "name": "powdered milk, skim",
+                "percent": 0.0475,
+                "nutrition": "skim milk powder, carnation"
+            },
+            {
+                "name": "shortening",
+                "percent": 0.0475,
+                "note": "If you don't have shortening on hand, you can do it with all butter if you want. It doesn't noticeably change the result.",
+                "nutrition": "Shortening, composite, household, vegetable"
+            },
+            {
+                "name": "butter",
+                "percent": 0.0475,
+                "nutrition": "Butter, without salt"
+            },
+            {
+                "name": "water",
+                "percent": 0.6,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Mix everything until smooth (10-15 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Egg wash if desired before baking at 400&deg;F until internal temperature reaches 190&deg;F (for me, 80 g buns take 12 minutes)."]
+    },
+    {
+        "title": "White Sandwich Bread",
+        "notes": "A simple, traditional white loaf.",
+        "ingredients": [
+            {
+                "name": "flour",
+                "percent": 1,
+                "note": "Use &quot;strong&quot; flour if you can find it.",
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.0375,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.025,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "sugar",
+                "percent": 0.0375,
+                "nutrition": "Sugars, granulated"
+            },
+            {
+                "name": "powdered milk, skim",
+                "percent": 0.05,
+                "nutrition": "skim milk powder, carnation"
+            },
+            {
+                "name": "shortening",
+                "percent": 0.0375,
+                "note": "If you don't have shortening on hand, you can do it with butter. It doesn't noticeably change the result.",
+                "nutrition": "Shortening, composite, household, vegetable"
+            },
+            {
+                "name": "water",
+                "percent": 0.6,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 400&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes)."]
+    },
+    {
+        "title": "Whole Wheat Sandwich Bread",
+        "notes": "The softest, most delicious whole wheat bread I've found.",
+        "ingredients": [
+            {
+                "name": "flour, whole wheat",
+                "percent": 1,
+                "note": "I've just used whole wheat bread flour. I have not tested this with whole grain flour.",
+                "nutrition": "Flour, unenriched, whole wheat"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.03,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.02,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "malt syrup",
+                "percent": 0.02,
+                "note": "You can get malt syrup and malt powder and stores that sell wine and beer making supplies. You can substitute between syrup and powder with the following ratios: 1 part powder -> 1.2 parts syrup; 1 part syrup -> 0.8 parts powder. The amounts in this recipe are so small that you don't need to fret too much.",
+                "nutrition": "Syrups, malt"
+            },
+            {
+                "name": "sugar",
+                "percent": 0.02,
+                "nutrition": "Sugars, granulated"
+            },
+            {
+                "name": "powdered milk, skim",
+                "percent": 0.03,
+                "nutrition": "skim milk powder, carnation"
+            },
+            {
+                "name": "shortening",
+                "percent": 0.04,
+                "note": "If you don't have shortening on hand, you can do it with butter. It doesn't noticeably change the result.",
+                "nutrition": "Shortening, composite, household, vegetable"
+            },
+            {
+                "name": "water",
+                "percent": 0.69,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 400&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes)."]
+    },
+    {
+        "title": "Seven-Grain Bread",
+        "notes": "A hearty but simple-to-make multigrain bread that makes the best toast. I find these ingredients at my local Bulk Barn.",
+        "ingredients": [
+            {
+                "name": "white bread flour",
+                "percent": 0.57,
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "rye flour",
+                "percent": 0.14,
+                "nutrition": "Rye flour, medium"
+            },
+            {
+                "name": "barley flour",
+                "percent": 0.05,
+                "nutrition": "Barley flour or meal"
+            },
+            {
+                "name": "cornmeal",
+                "percent": 0.07,
+                "nutrition": "Cornmeal, yellow, whole-grain"
+            },
+            {
+                "name": "rolled oats",
+                "percent": 0.07,
+                "nutrition": "whole grain old fashioned rolled oats, quaker 100%"
+            },
+            {
+                "name": "flax seeds",
+                "percent": 0.05,
+                "nutrition": "Flax seeds"
+            },
+            {
+                "name": "millet",
+                "percent": 0.05,
+                "nutrition": "Millet, raw"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.024,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.018,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "water",
+                "percent": 0.62,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Sift together the various flours to mix them thoroughly.", "Add the remaining ingredients and mix until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 425&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes)."]
+    },
+    {
+        "title": "Rolls, Hard",
+        "notes": "Perfect for more traditional dinner rolls.",
+        "ingredients": [
+            {
+                "name": "flour",
+                "percent": 1,
+                "note": "Use &quot;strong&quot; flour if you can find it.",
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.035,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.0225,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "sugar",
+                "percent": 0.0225,
+                "nutrition": "Sugars, granulated"
+            },
+            {
+                "name": "shortening",
+                "percent": 0.0225,
+                "note": "If you don't have shortening on hand, you can do it with butter. It doesn't noticeably change the result.",
+                "nutrition": "Shortening, composite, household, vegetable"
+            },
+            {
+                "name": "egg whites",
+                "percent": 0.0225,
+                "note": "Egg whites from a carton work just fine.",
+                "nutrition": "Egg, raw, white only"
+            },
+            {
+                "name": "water",
+                "percent": 0.59,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 60 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 425&ndash;450&deg;F until internal temperature reaches 190&deg;F (for me, 10&ndash;12 minutes). If you can throw some steam into the mix, even better. If you have room in your oven, you can simulate this by putting an empty pan in the bottom of the oven while it's preheating and pouring water into it when you put the buns into the oven."]
+    },
+    {
+        "title": "Pizza Dough",
+        "notes": "Who doesn't love pizza?!",
+        "ingredients": [
+            {
+                "name": "flour",
+                "percent": 1,
+                "note": "At the Italian market, you can find special \"Doppio Zero\" (double zero) pizza flour that's lighter and designed specifically for pizza.",
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.0275,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.02,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "malt syrup",
+                "percent": 0.005,
+                "note": "You can get malt syrup and malt powder and stores that sell wine and beer making supplies. You can substitute between syrup and powder with the following ratios: 1 part powder -> 1.2 parts syrup; 1 part syrup -> 0.8 parts powder. The amounts in this recipe are miniscule. Wing it or even skip it.",
+                "nutrition": "Syrups, malt"
+            },
+            {
+                "name": "water",
+                "percent": 0.61,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Mix everything until smooth (8&ndash;10 minutes in bread mixer).", "Let rise for 90&ndash;120 minutes.", "Scale, roll into balls, and let rise for an hour.", "When ready to serve, form the circles with the dough balls (this is traditionally always done by hand), add toppings, and cook in the hottest oven you can muster, preferably directly on a pizza stone. Making the perfect pizza in a home oven is hard no matter what, but whatever the result, it will be delicious."]
+    },
+    {
+        "title": "French Bread",
+        "notes": "Not quite the traditional baguette, but ideal for making loaves for garlic toast.",
+        "ingredients": [
+            {
+                "name": "flour",
+                "percent": 1,
+                "note": "Use &quot;strong&quot; flour if you can find it.",
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.0275,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.02,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "malt syrup",
+                "percent": 0.005,
+                "note": "You can get malt syrup and malt powder and stores that sell wine and beer making supplies. You can substitute between syrup and powder with the following ratios: 1 part powder -> 1.2 parts syrup; 1 part syrup -> 0.8 parts powder. The amounts in this recipe are miniscule. Wing it or even skip it.",
+                "nutrition": "Syrups, malt"
+            },
+            {
+                "name": "sugar",
+                "percent": 0.0175,
+                "nutrition": "Sugars, granulated"
+            },
+            {
+                "name": "shortening",
+                "percent": 0.0175,
+                "note": "If you don't have shortening on hand, you can do it with butter. It doesn't noticeably change the result.",
+                "nutrition": "Shortening, composite, household, vegetable"
+            },
+            {
+                "name": "water",
+                "percent": 0.61,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 90&ndash;120 minutes.", "Scale, shape, and let rise for another hour.", "Bake at 425&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes). Steam is a great help if available."]
+    },
+    {
+        "title": "Pita",
+        "notes": "Best with a pizza stone and really hot oven, but otherwise easy to make at home.",
+        "ingredients": [
+            {
+                "name": "flour, white",
+                "percent": 0.83,
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "flour, whole wheat",
+                "percent": 0.17,
+                "nutrition": "Flour, unenriched, whole wheat"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.04,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.02,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "sugar",
+                "percent": 0.03,
+                "nutrition": "Sugars, granulated"
+            },
+            {
+                "name": "yogurt, plain, low fat",
+                "percent": 0.125,
+                "nutrition": "Yogurt, low fat, plain"
+            },
+            {
+                "name": "olive oil",
+                "percent": 0.04,
+                "note": "Other vegetable oils can work too, but olive is best.",
+                "nutrition": "Olive oil"
+            },
+            {
+                "name": "water",
+                "percent": 0.58,
+                "nutrition": "_NULL"
+            }
+        ],
+        "instructions": ["Mix everything until smooth (10&ndash;12 minutes in bread mixer).", "Let rise for 90 minutes.", "Scale into 90 g (3 oz) balls and let rest for 10&ndash;30 minutes.", "With a rolling pin, roll into 4&ndash;5 inch circles and bake on a pizza stone or dry sheet pan at 500&deg;F until lightly golden around the edges (~5 minutes). Do not overbake!"]
+    },
+    {
+        "title": "Oatmeal Bread",
+        "notes": "This is another of my favourite sandwich loaves. You can also bake it as a boule directly on a baking stone. Delicious!",
+        "ingredients": [
+            {
+                "heading": "Oat Soaker"
+            },
+            {
+                "name": "water",
+                "percent": 0.183,
+                "nutrition": "_NULL"
+            },
+            {
+                "name": "rolled oats",
+                "percent": 0.124,
+                "nutrition": "whole grain old fashioned rolled oats, quaker 100%"
+            },
+            {
+                "heading": "Final Dough"
+            },
+            {
+                "name": "water, 80&deg;F",
+                "percent": 0.465,
+                "nutrition": "_NULL"
+            },
+            {
+                "name": "oat soaker"
+            },
+            {
+                "name": "honey",
+                "percent": 0.086,
+                "nutrition": "Honey"
+            },
+            {
+                "name": "malt syrup",
+                "percent": 0.005,
+                "note": "You can get malt syrup and malt powder and stores that sell wine and beer making supplies. You can substitute between syrup and powder with the following ratios: 1 part powder -> 1.2 parts syrup; 1 part syrup -> 0.8 parts powder. The amounts in this recipe are small enough that you don't need to fret too much.",
+                "nutrition": "Syrups, malt"
+            },
+            {
+                "name": "flour",
+                "percent": 0.738,
+                "note": "Use &quot;strong&quot; flour if you can find it.",
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "yeast, instant",
+                "percent": 0.01,
+                "note": "Use 1.5&times; more active dry yeast or three times as much fresh yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.021,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "rolled oats, toasted",
+                "percent": 0.138,
+                "note": "Toasting is optional. It does add a nice flavour.",
+                "nutrition": "whole grain old fashioned rolled oats, quaker 100%"
+            }
+        ],
+        "instructions": ["Make the soaker by boiling the water and pouring it over the oats. Stir, cover with plastic wrap, and let sit at least 30 minutes.", "To make the dough, combine the water, oat soaker, honey, and malt in the mixer and mix until the soaker breaks up.", "Add the flour, salt and yeast and mix until gluten starts to form and the dough feels tacky (~7 minutes).", "Add the toasted oats and mix for another minute or two until it's all incorporated.", "Let rise for an hour.", "Scale, shape or pan, and let rise for another hour or so.", "Bake at 425&deg;F until the internal temperature is 190&deg;F (for me, 20&ndash;25 minutes). If your oven runs hot, consider covering the bread pans with foil halfway through so the tops don't burn."]
+    }
+]

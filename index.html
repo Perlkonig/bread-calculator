@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bread Calculator</title>
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width,initial-scale=1'>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel='icon' type='image/png' href='favicon.png'>
+
+        <style>
+            .decAlign {
+                text-align: right;
+            }
+            #RecipeNote {
+                padding-bottom: 1em;
+            }
+            .ingredientNote {
+                font-size: smaller;
+                margin-bottom: 0.25em !important;
+            }
+        </style>
+        <script lang="javascript">
+            var g2oz = (num) => { return num * 0.03527396; }
+            var oz2g = (num) => { return num * 28.34952; }
+
+            var roundFlour = (num) => {
+                var len = Math.trunc(num).toString().length;
+                var pow = Math.ceil(len / 2);
+                var mult = Math.pow(10, pow);
+                return Math.ceil(num / mult) * mult;
+            };
+
+            var generateNutrition = () => {
+                var select = document.getElementById("RecipeList");
+                var recipe = recipes.filter(x => x.title === select.value)[0];
+                var totalpc = (recipe["ingredients"]).reduce((prev, curr) => {
+                    if (curr.hasOwnProperty("percent")) {
+                        return prev + curr.percent;
+                    } else {
+                        return prev;
+                    }
+                }, 0);
+                var amt = parseFloat(document.getElementById("UnitWeight").value);
+                if ( isNaN(amt) ) {
+                    alert("You must give a unit weight.");
+                    return;
+                }
+
+                var nutrition = {
+                    calories: 0,
+                    protein: 0,
+                    carbs: 0,
+                    fibre: 0,
+                    sugars: 0,
+                    fat: 0,
+                    saturated: 0
+                };
+
+                var unit = document.querySelector('input[name="unit"]:checked').value;
+                if (unit === "oz") {
+                    amt = oz2g(amt);
+                }
+
+                var flourWeight = amt / totalpc;
+
+                var complete = true;
+                recipe.ingredients.forEach((ingredient) => {
+                    if (ingredient.hasOwnProperty("nutrition")) {
+                        if (ingredient.nutrition !== "_NULL") {
+                            var nInfo = nutritionDB.filter(x => x.name === ingredient.nutrition)[0];
+                            if ( (nInfo !== null) && (nInfo !== undefined) ) {
+                                var qty = flourWeight * ingredient.percent;
+                                var mult = qty / nInfo.baseQty;
+                                nutrition.calories += nInfo.calories * mult;
+                                nutrition.protein += nInfo.protein * mult;
+                                nutrition.carbs += nInfo.carbs * mult;
+                                nutrition.fibre += nInfo.fibre * mult;
+                                nutrition.sugars += nInfo.sugars * mult;
+                                nutrition.fat += nInfo.fat * mult;
+                                nutrition.saturated += nInfo.saturated * mult;
+                            } else {
+                                console.warn('Could not find nutrition entry for "' + ingredient.nutrition + '"');
+                                complete = false;
+                            }
+                        }
+                    } else {
+                        console.warn('No nutrition link entered for the ingredient "' + ingredient.name + '"');
+                        complete = false;
+                    }
+                });
+
+                var ph = document.getElementById("NutritionPlaceholder");
+                ph.innerHTML = "";
+
+                var table = document.createElement("table");
+                table.classList.add("table", "is-narrow");
+
+                if (! complete) {
+                    // TFoot
+                    var tfoot = document.createElement("tfoot");
+                    tr = document.createElement("tr");
+                    th = document.createElement("th");
+                    th.setAttribute("colspan", 2);
+                    th.innerHTML = "Nutrition information incomplete. See console for details.";
+                    tr.appendChild(th);
+                    tfoot.appendChild(tr)
+                    table.appendChild(tfoot);
+                }
+
+                // TBody
+                var row, left, right;
+                var tbody = document.createElement("tbody");
+
+                // Calories
+                row = document.createElement("tr");
+                left = document.createElement("td");
+                left.innerHTML = "Calories";
+                right = document.createElement("td");
+                right.innerHTML = nutrition.calories.toFixed(2) + " g ("+ g2oz(nutrition.calories).toFixed(2) +" oz)"
+                row.appendChild(left);
+                row.appendChild(right);
+                tbody.appendChild(row);
+
+                // Protein
+                row = document.createElement("tr");
+                left = document.createElement("td");
+                left.innerHTML = "Protein";
+                right = document.createElement("td");
+                right.innerHTML = nutrition.protein.toFixed(2) + " g ("+ g2oz(nutrition.protein).toFixed(2) +" oz)"
+                row.appendChild(left);
+                row.appendChild(right);
+                tbody.appendChild(row);
+
+                // Carbs
+                row = document.createElement("tr");
+                left = document.createElement("td");
+                left.innerHTML = "Carbohydrates";
+                right = document.createElement("td");
+                right.innerHTML = nutrition.carbs.toFixed(2) + " g ("+ g2oz(nutrition.carbs).toFixed(2) +" oz)"
+                row.appendChild(left);
+                row.appendChild(right);
+                tbody.appendChild(row);
+
+                // Fibre
+                row = document.createElement("tr");
+                left = document.createElement("td");
+                left.innerHTML = "&emsp;Fibre";
+                right = document.createElement("td");
+                right.innerHTML = "&emsp;" + nutrition.fibre.toFixed(2) + " g ("+ g2oz(nutrition.fibre).toFixed(2) +" oz)"
+                row.appendChild(left);
+                row.appendChild(right);
+                tbody.appendChild(row);
+
+                // Sugars
+                row = document.createElement("tr");
+                left = document.createElement("td");
+                left.innerHTML = "&emsp;Sugars";
+                right = document.createElement("td");
+                right.innerHTML = "&emsp;" + nutrition.sugars.toFixed(2) + " g ("+ g2oz(nutrition.sugars).toFixed(2) +" oz)"
+                row.appendChild(left);
+                row.appendChild(right);
+                tbody.appendChild(row);
+
+                // Fat
+                row = document.createElement("tr");
+                left = document.createElement("td");
+                left.innerHTML = "Fat";
+                right = document.createElement("td");
+                right.innerHTML = nutrition.fat.toFixed(2) + " g ("+ g2oz(nutrition.fat).toFixed(2) +" oz)"
+                row.appendChild(left);
+                row.appendChild(right);
+                tbody.appendChild(row);
+
+                // Saturated
+                row = document.createElement("tr");
+                left = document.createElement("td");
+                left.innerHTML = "&emsp;Saturated";
+                right = document.createElement("td");
+                right.innerHTML = "&emsp;" + nutrition.saturated.toFixed(2) + " g ("+ g2oz(nutrition.saturated).toFixed(2) +" oz)"
+                row.appendChild(left);
+                row.appendChild(right);
+                tbody.appendChild(row);
+
+                table.appendChild(tbody);
+
+                ph.appendChild(table);
+            };
+
+            function generateRecipe() {
+                var select = document.getElementById("RecipeList");
+                var recipe = recipes.filter(x => x.title === select.value)[0];
+                var totalpc = (recipe["ingredients"]).reduce((prev, curr) => {
+                    if (curr.hasOwnProperty("percent")) {
+                        return prev + curr.percent;
+                    } else {
+                        return prev;
+                    }
+                }, 0);
+                var qty = parseFloat(document.getElementById("YieldQuantity").value);
+                var amt = parseFloat(document.getElementById("UnitWeight").value);
+                if ( isNaN(qty) || isNaN(amt) ) {
+                    alert("You must give a quantity and a unit weight.");
+                    return;
+                }
+                var totalWeight = qty * amt;
+                var flourWeight = roundFlour(totalWeight / totalpc);
+
+                // Create table
+                var ph = document.getElementById("RecipePlaceholder");
+                ph.innerHTML = '<h2 class="recipeTitle">' + recipe.title + '</h2><p class="recipeNotes">' + recipe.notes + "</p>";
+                var table = document.createElement("table");
+                table.classList.add("table", "is-striped", "is-narrow");
+
+                // THead
+                var thead = document.createElement("thead");
+                var tr = document.createElement("tr");
+                var th1 = document.createElement("th");
+                th1.innerHTML = "Ingredient";
+                var th2 = document.createElement("th");
+                th2.innerHTML = "Amount"
+                tr.appendChild(th1);
+                tr.appendChild(th2);
+                thead.appendChild(tr)
+                table.appendChild(thead);
+
+                // TBody
+                var totalWeight = 0;
+                var tbody = document.createElement("tbody");
+                var notes = [];
+                recipe.ingredients.forEach((x) => {
+                    var row = document.createElement("tr");
+                    if (x.hasOwnProperty("heading")) {
+                        var header = document.createElement("th");
+                        header.setAttribute("colspan", 2);
+                        header.innerHTML = x.heading;
+                        row.appendChild(header);
+                    } else {
+                        var name = document.createElement("td");
+                        if (x.hasOwnProperty("note")) {
+                            notes.push(x.note);
+                            name.innerHTML = x.name + " (" + notes.length + ")";
+                        } else {
+                            name.innerHTML = x.name;
+                        }
+                        var amt = document.createElement("td");
+                        amt.className = "decAlign";
+                        if (x.hasOwnProperty("percent")) {
+                            amt.innerHTML = Math.trunc(flourWeight * x.percent * 100) / 100;
+                            totalWeight += Math.trunc(flourWeight * x.percent * 100) / 100;
+                        } else {
+                            amt.innerHTML = "&mdash;";
+                        }
+                        row.appendChild(name);
+                        row.appendChild(amt);
+                    }
+                    tbody.appendChild(row);
+                });
+                table.appendChild(tbody);
+
+                // TFoot
+                var tfoot = document.createElement("tfoot");
+                tr = document.createElement("tr");
+                th1 = document.createElement("th");
+                th1.innerHTML = "Total Weight";
+                th2 = document.createElement("th");
+                th2.innerHTML = Math.ceil(totalWeight);
+                tr.appendChild(th1);
+                tr.appendChild(th2);
+                tfoot.appendChild(tr)
+                table.appendChild(tfoot);
+
+                ph.appendChild(table);
+
+                if (notes.length > 0) {
+                    for (var i = 0; i < notes.length; i++) {
+                        ph.innerHTML += '<p class="ingredientNote">' + (i+1) + "&emsp;" + notes[i] + "</p>";
+                    }
+                }
+                ph.innerHTML += '<h3 class="subtitle">Directions</h3>';
+                var list = document.createElement("ol");
+                list.className = "recipeInstructions";
+                recipe.instructions.forEach((x) => {
+                    var item = document.createElement("li");
+                    item.innerHTML = x;
+                    list.appendChild(item);
+                });
+                ph.appendChild(list);
+
+                var nutrition = generateNutrition();
+            }
+
+            function showNote() {
+                var ph = document.getElementById("RecipeNote");
+                ph.innerHTML = "";
+                if (recipes.length > 0) {
+                    var select = document.getElementById("RecipeList");
+                    var recipe = recipes.filter(x => x.title === select.value)[0];
+                    ph.innerHTML = recipe.notes;
+                }
+            }
+
+            var recipes, nutritionDB;
+            document.addEventListener("DOMContentLoaded", function(event) {
+                document.getElementById("CalcRecipe").addEventListener("click", generateRecipe, false);
+                document.getElementById("RecipeList").addEventListener("change", showNote, false);
+                document.getElementById("unitSelect").addEventListener("click", generateNutrition, false);
+
+                fetch('./recipes.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("HTTP error " + response.status);
+                    }
+                    return response.json();
+                })
+                .then(json => {
+                    recipes = json.sort((a, b) => {
+                        let fa = a.title.toLowerCase(),
+                        fb = b.title.toLowerCase();
+
+                        if (fa < fb) {
+                            return -1;
+                        }
+                        if (fa > fb) {
+                            return 1;
+                        }
+                        return 0;
+                    });
+                    var select = document.getElementById("RecipeList");
+                    while (select.lastChild) {
+                        select.removeChild(select.lastChild);
+                    }
+                    var opt = document.createElement('option');
+                    opt.value = "";
+                    opt.innerHTML = "";
+                    select.appendChild(opt);
+                    recipes.forEach((r) => {
+                        var opt = document.createElement('option');
+                        opt.value = r["title"];
+                        opt.innerHTML = r["title"];
+                        select.appendChild(opt);
+                    });
+                })
+                .catch(function () {
+                    alert("An error occurred while loading the recipes.");
+                })
+
+                fetch('./nutrition.json')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("HTTP error " + response.status);
+                    }
+                    return response.json();
+                })
+                .then(json => {
+                    nutritionDB = json;
+                })
+                .catch(function () {
+                    alert("An error occurred while loading the nutritional information.");
+                })
+            });
+        </script>
+    </head>
+    <body class="container p-6">
+        <header>
+            <h1 class="title">Bread Calculator</h1>
+        </header>
+        <section class="content">
+            <p>Select the recipe and enter the desired quantities. Units don't matter. If you give the weight in ounces, then read the recipe as in ounces. All the recipes are given by weight, so you'll need a kitchen scale.</p>
+            <p>Some notes:</p>
+            <ul>
+                <li>Standard loaf pans typically take about 800 g of dough (28 oz).</li>
+                <li>Small dinner rolls tend to be around 50 g of dough (1.75 oz).</li>
+                <li>Larger rolls, like hamburger buns, tend to be between 80 and 100 g (2.75 to 3.5 oz).</li>
+                <li>12&Prime; sandwich rolls are around 225 g (8 oz).</li>
+                <li>Standard baguette is around 350 g (12 oz).</li>
+                <li>Pizzas run from 200 g (thin 12&Prime;) to 450 g (thin 14&Prime;) to 575 g (thin 16&Prime;) (7 oz, 16 oz, 20 oz).</li>
+                <li>Pitas are typically 90 g (3 oz) each.</li>
+            </ul>
+            <div class="field">
+                <label class="label" for="RecipeList">Choose recipe:</label>
+                <div class="control">
+                    <div class="select">
+                        <select id="RecipeList" name="RecipeList"></select>
+                    </div>
+                </div>
+            </div>
+            <div id="RecipeNote" class="content"></div>
+            <div class="field">
+                <label class="label" for="YieldQuantity">How many units do you want (e.g., loaves, buns)?</label>
+                <div class="control">
+                    <input class="input" id="YieldQuantity" name="YieldQuantity" type="number" min="1" step="1" value="1">
+                </div>
+            </div>
+            <div class="field">
+                <label class="label" for="UnitWeight">How heavy is each unit (e.g., loaf, individual bun)?</label>
+                <div class="control">
+                    <input class="input" id="UnitWeight" name="UnitWeight" type="number" min="0">
+                </div>
+            </div>
+            <div class="field">
+                <div class="control">
+                    <button class="button" id="CalcRecipe" name="CalcRecipe">Generate Recipe</button>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div id="RecipePlaceholder"></div>
+        </section>
+        <section class="nutrition">
+            <h3 class="subtitle">Nutritional Information</h3>
+            <p class="content">Approximate nutritional info per unit (e.g., loaf or bun). This is the only context where units matter. Select the unit you used for the "How heavy is each unit" question.</p>
+            <div class="control" id="unitSelect">
+                <label class="radio">
+                  <input type="radio" name="unit" value="g" checked="checked">
+                  Grams (g)
+                </label>
+                <label class="radio">
+                  <input type="radio" name="unit" value="oz">
+                  Ounces (oz)
+                </label>
+              </div>
+            <div id="NutritionPlaceholder"></div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,211 @@
+[
+    {
+        "name": "Barley flour or meal",
+        "baseQty": 100,
+        "calories": 345,
+        "protein": 10.5,
+        "carbs": 74.52,
+        "fibre": 10.1,
+        "sugars": 0.8,
+        "fat": 1.6,
+        "saturated": 0.335
+    },
+    {
+        "name": "Butter, without salt",
+        "baseQty": 100,
+        "calories": 717,
+        "protein": 0.85,
+        "carbs": 0.06,
+        "fibre": 0,
+        "sugars": 0.06,
+        "fat": 81.11,
+        "saturated": 50.489
+    },
+    {
+        "name": "Cornmeal, yellow, whole-grain",
+        "baseQty": 100,
+        "calories": 362,
+        "protein": 8.12,
+        "carbs": 76.89,
+        "fibre": 7.3,
+        "sugars": 0.64,
+        "fat": 3.59,
+        "saturated": 0.505
+    },
+    {
+        "name": "Egg, raw, white only",
+        "baseQty": 100,
+        "calories": 52,
+        "protein": 10.9,
+        "carbs": 0.73,
+        "fibre": 0,
+        "sugars": 0.71,
+        "fat": 0.17,
+        "saturated": 0
+    },
+    {
+        "name": "Flax seeds",
+        "baseQty": 100,
+        "calories": 500,
+        "protein": 20,
+        "carbs": 35,
+        "fibre": 27.5,
+        "sugars": 0,
+        "fat": 35,
+        "saturated": 3.75
+    },
+    {
+        "name": "Flour, unenriched, whole wheat",
+        "baseQty": 100,
+        "calories": 370,
+        "protein": 15.1,
+        "carbs": 71.2,
+        "fibre": 10.6,
+        "sugars": 0,
+        "fat": 2.73,
+        "saturated": 0
+    },
+    {
+        "name": "Honey",
+        "baseQty": 100,
+        "calories": 304,
+        "protein": 0.3,
+        "carbs": 82.4,
+        "fibre": 0.2,
+        "sugars": 82.12,
+        "fat": 0,
+        "saturated": 0
+    },
+    {
+        "name": "Millet, raw",
+        "baseQty": 100,
+        "calories": 378,
+        "protein": 11.02,
+        "carbs": 72.85,
+        "fibre": 8.5,
+        "sugars": 0,
+        "fat": 4.22,
+        "saturated": 0.723
+    },
+    {
+        "name": "Olive oil",
+        "baseQty": 100,
+        "calories": 884,
+        "protein": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugars": 0,
+        "fat": 100,
+        "saturated": 13.808
+    },
+    {
+        "name": "Rye flour, medium",
+        "baseQty": 100,
+        "calories": 349,
+        "protein": 10.88,
+        "carbs": 75.43,
+        "fibre": 11.8,
+        "sugars": 1.1,
+        "fat": 1.52,
+        "saturated": 0.18
+    },
+    {
+        "name": "Salt, table",
+        "baseQty": 100,
+        "calories": 0,
+        "protein": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugars": 0,
+        "fat": 0,
+        "saturated": 0
+    },
+    {
+        "name": "Shortening, composite, household, vegetable",
+        "baseQty": 100,
+        "calories": 884,
+        "protein": 0,
+        "carbs": 0,
+        "fibre": 0,
+        "sugars": 0,
+        "fat": 99.97,
+        "saturated": 24.98
+    },
+    {
+        "name": "skim milk powder, carnation",
+        "baseQty": 100,
+        "calories": 360,
+        "protein": 36,
+        "carbs": 52,
+        "fibre": 0,
+        "sugars": 52,
+        "fat": 0,
+        "saturated": 0
+    },
+    {
+        "name": "Sugars, granulated",
+        "baseQty": 100,
+        "calories": 387,
+        "protein": 0,
+        "carbs": 99.98,
+        "fibre": 0,
+        "sugars": 99.98,
+        "fat": 0,
+        "saturated": 0
+    },
+    {
+        "name": "Syrups, malt",
+        "baseQty": 100,
+        "calories": 318,
+        "protein": 6.2,
+        "carbs": 71.3,
+        "fibre": 0,
+        "sugars": 71.3,
+        "fat": 0,
+        "saturated": 0
+    },
+    {
+        "name": "Wheat flour, enriched, bread, white",
+        "baseQty": 100,
+        "calories": 361,
+        "protein": 11.98,
+        "carbs": 72.53,
+        "fibre": 2.4,
+        "sugars": 0.31,
+        "fat": 1.66,
+        "saturated": 0.244
+    },
+    {
+        "name": "whole grain old fashioned rolled oats, quaker 100%",
+        "baseQty": 100,
+        "calories": 375,
+        "protein": 12.5,
+        "carbs": 67.5,
+        "fibre": 10,
+        "sugars": 2.5,
+        "fat": 7.5,
+        "saturated": 1.25
+    },
+    {
+        "name": "Yeast",
+        "baseQty": 100,
+        "calories": 325,
+        "protein": 40.44,
+        "carbs": 41.22,
+        "fibre": 26.9,
+        "sugars": 0,
+        "fat": 7.61,
+        "saturated": 1.001
+    },
+    {
+        "name": "Yogurt, low fat, plain",
+        "baseQty": 100,
+        "calories": 63,
+        "protein": 5.25,
+        "carbs": 7.04,
+        "fibre": 0,
+        "sugars": 7.04,
+        "fat": 1.55,
+        "saturated": 1
+    }
+]
