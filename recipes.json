@@ -47,7 +47,7 @@
                 "nutrition": "_NULL"
             }
         ],
-        "instructions": ["Mix everything until smooth (10-15 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Egg wash if desired before baking at 400&deg;F until internal temperature reaches 190&deg;F (for me, 80 g buns take 12 minutes)."]
+        "instructions": ["Mix everything until smooth (10-15 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Egg wash if desired before baking at 400&deg;F until internal temperature reaches 190&deg;F (for me, 80 g buns take 12–15 minutes)."]
     },
     {
         "title": "White Sandwich Bread",
@@ -92,7 +92,7 @@
                 "nutrition": "_NULL"
             }
         ],
-        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 400&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes)."]
+        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 400&deg;F until internal temperature reaches 190&deg;F (for me, approx. 30 minutes)."]
     },
     {
         "title": "Whole Wheat Sandwich Bread",
@@ -143,7 +143,7 @@
                 "nutrition": "_NULL"
             }
         ],
-        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 400&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes)."]
+        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 400&deg;F until internal temperature reaches 190&deg;F (for me, approx. 30 minutes)."]
     },
     {
         "title": "Seven-Grain Bread",
@@ -201,7 +201,7 @@
                 "nutrition": "_NULL"
             }
         ],
-        "instructions": ["Sift together the various flours to mix them thoroughly.", "Add the remaining ingredients and mix until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 425&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes)."]
+        "instructions": ["Sift together the various flours to mix them thoroughly.", "Add the remaining ingredients and mix until smooth (~10 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Bake at 425&deg;F until internal temperature reaches 190&deg;F (for me, approx. 30 minutes)."]
     },
     {
         "title": "Rolls, Hard",
@@ -328,7 +328,7 @@
                 "nutrition": "_NULL"
             }
         ],
-        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 90&ndash;120 minutes.", "Scale, shape, and let rise for another hour.", "Bake at 425&deg;F until internal temperature reaches 190&deg;F (for me, 12&ndash;15 minutes). Steam is a great help if available."]
+        "instructions": ["Mix everything until smooth (~10 minutes in bread mixer).", "Let rise for 90&ndash;120 minutes.", "Scale, shape, and let rise for another hour.", "Bake at 425&deg;F until internal temperature reaches 190&deg;F (for me, 15&ndash;20 minutes). Steam is a great help if available."]
     },
     {
         "title": "Pita",
@@ -442,6 +442,6 @@
                 "nutrition": "whole grain old fashioned rolled oats, quaker 100%"
             }
         ],
-        "instructions": ["Make the soaker by boiling the water and pouring it over the oats. Stir, cover with plastic wrap, and let sit at least 30 minutes.", "To make the dough, combine the water, oat soaker, honey, and malt in the mixer and mix until the soaker breaks up.", "Add the flour, salt and yeast and mix until gluten starts to form and the dough feels tacky (~7 minutes).", "Add the toasted oats and mix for another minute or two until it's all incorporated.", "Let rise for an hour.", "Scale, shape or pan, and let rise for another hour or so.", "Bake at 425&deg;F until the internal temperature is 190&deg;F (for me, 20&ndash;25 minutes). If your oven runs hot, consider covering the bread pans with foil halfway through so the tops don't burn."]
+        "instructions": ["Make the soaker by boiling the water and pouring it over the oats. Stir, cover with plastic wrap, and let sit at least 30 minutes.", "To make the dough, combine the water, oat soaker, honey, and malt in the mixer and mix until the soaker breaks up.", "Add the flour, salt and yeast and mix until gluten starts to form and the dough feels tacky (~7 minutes).", "Add the toasted oats and mix for another minute or two until it's all incorporated.", "Let rise for an hour.", "Scale, shape or pan, and let rise for another hour or so.", "Bake at 425&deg;F until the internal temperature is 190&deg;F (for me, approx. 30 minutes). If your oven runs hot, consider covering the bread pans with foil halfway through so the tops don't burn."]
     }
 ]
