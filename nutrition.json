@@ -33,6 +33,17 @@
         "saturated": 0.505
     },
     {
+        "name": "Egg, raw",
+        "baseQty": 100,
+        "calories": 145,
+        "protein": 11.8,
+        "carbs": 0.98,
+        "fibre": 0,
+        "sugars": 0.77,
+        "fat": 10.01,
+        "saturated": 3.043
+    },
+    {
         "name": "Egg, raw, white only",
         "baseQty": 100,
         "calories": 52,
@@ -75,6 +86,17 @@
         "sugars": 82.12,
         "fat": 0,
         "saturated": 0
+    },
+    {
+        "name": "Milk, 2%",
+        "baseQty": 100,
+        "calories": 50,
+        "protein": 3.3,
+        "carbs": 4.8,
+        "fibre": 0,
+        "sugars": 5.06,
+        "fat": 1.98,
+        "saturated": 1.257
     },
     {
         "name": "Millet, raw",

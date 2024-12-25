@@ -50,6 +50,50 @@
         "instructions": ["Mix everything until smooth (10-15 minutes in bread mixer).", "Let rise for 75&ndash;90 minutes.", "Scale, pan, and let rise for another hour.", "Egg wash if desired before baking at 400&deg;F until internal temperature reaches 190&deg;F (for me, 80 g buns take 12–15 minutes)."]
     },
     {
+        "title": "Rolls, Brioches",
+        "notes": "A rich and decadent bread I save for special occasions.",
+        "ingredients": [
+            {
+                "name": "flour, divided",
+                "percent": 1,
+                "note": "Use &quot;strong&quot; flour if you can find it.",
+                "nutrition": "Wheat flour, enriched, bread, white"
+            },
+            {
+                "name": "yeast, fresh",
+                "percent": 0.05,
+                "note": "Use half as much active dry yeast or a third as much &quot;instant&quot; yeast.",
+                "nutrition": "Yeast"
+            },
+            {
+                "name": "salt",
+                "percent": 0.02,
+                "nutrition": "Salt, table"
+            },
+            {
+                "name": "sugar",
+                "percent": 0.05,
+                "nutrition": "Sugars, granulated"
+            },
+            {
+                "name": "milk, liquid",
+                "percent": 0.2,
+                "nutrition": "Milk, 2%"
+            },
+            {
+                "name": "eggs",
+                "percent": 0.5,
+                "nutrition": "Egg, raw"
+            },
+            {
+                "name": "butter",
+                "percent": 0.7,
+                "nutrition": "Butter, without salt"
+            }
+        ],
+        "instructions": ["Scald the milk and then let cool to lukewarm (~40&deg;C).", "If using fresh or active dry yeast, place the sugar and yeast in the cooled milk at let it activate.", "Divide the flour into quarters and combine one-quarter with the milk (and instant yeast, if using), mix until combined, and let rest until doubled (~30 minutes).", "In the mixer, combine the sponge, two more quarters of flour, and any remaining dry ingredients and make a soft dough.", "Gradually incorporate the butter, adding a bit of the remaining flour with each addition until fully incorporated. The dough will be soft and very sticky. Try to handle it as little as possible.", "For best results, cover and retard in the fridge overnight. The dough is much easier to handle.", "The next day, form rolls with the chilled dough and let proof for at least an hour.", "Wash the rolls with egg and then bake at 400&deg;F until done (usually 12–16 minutes)."]
+    },
+    {
         "title": "White Sandwich Bread",
         "notes": "A simple, traditional white loaf.",
         "ingredients": [
