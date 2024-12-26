@@ -81,17 +81,17 @@
                 "nutrition": "Milk, 2%"
             },
             {
-                "name": "eggs",
+                "name": "eggs (lightly beaten)",
                 "percent": 0.5,
                 "nutrition": "Egg, raw"
             },
             {
-                "name": "butter",
+                "name": "butter (room temperature)",
                 "percent": 0.7,
                 "nutrition": "Butter, without salt"
             }
         ],
-        "instructions": ["Scald the milk and then let cool to lukewarm (~40&deg;C).", "If using fresh or active dry yeast, place the sugar and yeast in the cooled milk at let it activate.", "Divide the flour into quarters and combine one-quarter with the milk (and instant yeast, if using), mix until combined, and let rest until doubled (~30 minutes).", "In the mixer, combine the sponge, eggs, two more quarters of flour, and any remaining dry ingredients and make a soft dough.", "Gradually incorporate the butter, adding a bit of the remaining flour with each addition until fully incorporated. The dough will be soft and very sticky. Try to handle it as little as possible.", "For best results, cover and retard in the fridge overnight. The dough is much easier to handle.", "The next day, form rolls with the chilled dough and let proof for at least an hour.", "Wash the rolls with egg and then bake at 400&deg;F until done (usually 12–16 minutes)."]
+        "instructions": ["Scald the milk and then let cool to lukewarm (~40&deg;C).", "If using fresh or active dry yeast, place the sugar and yeast in the cooled milk and let it activate.", "Divide the flour into quarters and combine one-quarter with the milk (and instant yeast, if using), mix until combined, and let rest until doubled (~30 minutes).", "In the mixer, combine the sponge, eggs, two more quarters of flour, and any remaining dry ingredients and make a soft dough.", "Gradually incorporate the butter, adding a bit of the remaining flour with each addition until fully incorporated. The dough will be soft and very sticky. Try to handle it as little as possible.", "For best results, cover and retard in the fridge overnight. The dough is much easier to handle.", "The next day, form rolls with the chilled dough and let proof for at least an hour.", "Wash the rolls with egg and then bake at 400&deg;F until done (usually 12–16 minutes)."]
     },
     {
         "title": "White Sandwich Bread",
